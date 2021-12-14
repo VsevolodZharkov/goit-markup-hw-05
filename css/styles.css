@@ -618,6 +618,29 @@ fill: var(--color-icon-primary);
 .portfoll-point-ad:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
+.portfoll-item-wrap{
+    position: relative;
+    overflow: hidden;
+}
+.portfoll-point-ad:hower .portfol-top-text {
+    transform: translateY(0);
+}
+.portfoll-top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    /* padding: 24px 63px; */
+    color: var(--background-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+}
+
 
 
 /*     footer    */
