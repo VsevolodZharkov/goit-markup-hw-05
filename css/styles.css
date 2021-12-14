@@ -101,6 +101,16 @@ img {
 .header-link.current {
     color: var(--accent-color);
 }
+.header-link.acctive::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
 .header-link-contakt {
     color: var(--primary-text-color); 
     font-weight: 500;
@@ -703,4 +713,49 @@ fill: var(--background-color);
     height: 80px;
     width: 206px;
     margin-left: 70px;
+}
+
+/*    всплывающие окно backdrop  */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms ease-in-out;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+.modal-btn {
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    color:var(--background-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 6px 6px;
+    background-color: transparent;
+    vertical-align: middle;
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.modal-svg {
+    height: 16px;
+    width: 13px;
 }
