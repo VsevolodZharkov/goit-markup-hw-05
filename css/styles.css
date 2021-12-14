@@ -622,7 +622,7 @@ fill: var(--color-icon-primary);
     position: relative;
     overflow: hidden;
 }
-.portfoll-point-ad:hower .portfol-top-text {
+.portfoll-point-ad:hover .portfoll-top-text {
     transform: translateY(0);
 }
 .portfoll-top-text {
@@ -637,7 +637,7 @@ fill: var(--color-icon-primary);
     line-height: 1.55;
     letter-spacing: 0.03em;
     height: 100%;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 300ms linear;
 }
 
