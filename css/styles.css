@@ -93,6 +93,7 @@ img {
     line-height: 1.14px;
     letter-spacing: 0.02em;
     text-decoration: none;
+    position: relative;
 }
 .header-link:hover,
 .header-link:focus {
